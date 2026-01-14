@@ -8,8 +8,8 @@ const multer = require("multer");
 const app = express();
 
 // ====== CONFIG ======
-const MONGO_URI = "mongodb://127.0.0.1:27017/spacebook"; // local MongoDB
-const PORT = 3000;
+const MONGO_URI = "mongodb+srv://jercahill:Spacebook2026@spacebook.mpqjbcv.mongodb.net/spacebook?retryWrites=true&w=majority";
+const PORT = process.env.PORT || 3000;
 
 // ====== DB SETUP ======
 mongoose.connect(MONGO_URI)
@@ -253,5 +253,5 @@ app.get("/logout", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Spacebook running at http://localhost:${PORT}`);
+  console.log(`Spacebook running on port ${PORT}`);
 });
