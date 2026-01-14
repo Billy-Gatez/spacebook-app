@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up – Spacebook</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo"><a href="index.html" style="color:#ff6a00;">Spacebook</a></div>
+    <div class="nav-links">
+      <a href="index.html">Log In</a>
+    </div>
+  </div>
+
+  <div class="page" style="justify-content:center;">
+    <div class="card" style="width:100%; max-width:480px;">
+      <h2 style="color:#ff6a00; margin-bottom:10px;">Create a Spacebook Account</h2>
+      <p style="color:#ccc; margin-bottom:20px;">It’s fast and cosmic.</p>
+
+      <form action="/signup" method="post">
+        <input type="text" name="name" placeholder="Full name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="date" name="birthday" placeholder="Birthday">
+        <input type="text" name="network" placeholder="Universe / Network (e.g. Milky Way)">
+        <button class="btn-primary" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

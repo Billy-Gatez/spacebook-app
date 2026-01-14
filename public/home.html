@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home – Spacebook</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="/feed" style="color:#ff6a00; text-decoration:none;">Spacebook</a>
+    </div>
+    <div class="nav-links">
+      <a href="/profile">Profile</a>
+      <a href="/feed">Feed</a>
+      <a href="/logout">Log Out</a>
+    </div>
+  </div>
+
+  <!-- PAGE LAYOUT -->
+  <div class="page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="card">
+        <strong style="color:#ff6a00;">Navigation</strong>
+        <ul style="list-style:none; margin-top:10px; font-size:14px;">
+          <li><a href="/profile">Your Profile</a></li>
+          <li><a href="/feed">Feed</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Friends</a></li>
+          <li><a href="#">Groups</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- FEED -->
+    <main class="feed">
+
+      <!-- STATUS BOX -->
+      <div class="card">
+        <form action="/post" method="post" enctype="multipart/form-data">
+          <textarea name="content" placeholder="What’s happening in your universe?"></textarea>
+
+          <label style="color:#ccc; font-size:14px; margin-top:6px; display:block;">
+            Upload an image (optional)
+          </label>
+          <input type="file" name="image" accept="image/*">
+
+          <button class="btn-primary" style="margin-top:10px;">Post</button>
+        </form>
+      </div>
+
+      <!-- STATIC POSTS (backend will replace this with dynamic feed) -->
+      <div class="card" style="margin-top:20px;">
+
+        <div class="post">
+          <div class="author">Jay</div>
+          <div class="meta">Just now · Los Angeles</div>
+          <p style="margin-top:6px;">Launching Spacebook. The galaxy is watching.</p>
+        </div>
+
+        <div class="post">
+          <div class="author">Spacebot</div>
+          <div class="meta">1 hour ago · Milky Way Network</div>
+          <p style="margin-top:6px;">Welcome to Spacebook v1.0 — neon, cosmic, and clean.</p>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

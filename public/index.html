@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spacebook – Connect Across the Universe</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Spacebook</div>
+    <div class="nav-links">
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="page" style="display:flex; justify-content:space-between; margin-top:80px;">
+    <div style="max-width:480px;">
+      <h1 style="font-size:42px; color:#ff6a00; margin-bottom:12px;">
+        Connect with your universe.
+      </h1>
+      <p style="font-size:18px; color:#ccc;">
+        Spacebook is your gateway to the galaxy — share, explore, and connect.
+      </p>
+    </div>
+
+    <div class="card" style="width:360px;">
+      <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button class="btn-primary" type="submit">Log In</button>
+      </form>
+
+      <hr style="margin:20px 0; border:none; border-top:1px solid #333;">
+
+      <a href="signup.html" class="btn-secondary" style="width:100%; text-align:center;">
+        Create new account
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
