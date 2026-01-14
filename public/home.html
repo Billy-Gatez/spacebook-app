@@ -7,7 +7,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <div class="navbar">
     <div class="logo">
       <a href="/feed" style="color:#ff6a00; text-decoration:none;">Spacebook</a>
@@ -19,10 +18,8 @@
     </div>
   </div>
 
-  <!-- PAGE LAYOUT -->
   <div class="page">
 
-    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="card">
         <strong style="color:#ff6a00;">Navigation</strong>
@@ -36,41 +33,18 @@
       </div>
     </aside>
 
-    <!-- FEED -->
     <main class="feed">
-
-      <!-- STATUS BOX -->
       <div class="card">
-        <form action="/post" method="post" enctype="multipart/form-data">
-          <textarea name="content" placeholder="What’s happening in your universe?"></textarea>
-
-          <label style="color:#ccc; font-size:14px; margin-top:6px; display:block;">
-            Upload an image (optional)
-          </label>
-          <input type="file" name="image" accept="image/*">
-
-          <button class="btn-primary" style="margin-top:10px;">Post</button>
-        </form>
+        <h2 style="color:#ff6a00; margin-bottom:10px;">Welcome to Spacebook</h2>
+        <p style="color:#ccc; font-size:14px;">
+          Use the navigation on the left to visit your profile, check your feed, and explore your universe.
+        </p>
+        <p style="margin-top:10px;">
+          <a href="/feed" class="btn-primary">Go to your Feed</a>
+        </p>
       </div>
-
-      <!-- STATIC POSTS (backend will replace this with dynamic feed) -->
-      <div class="card" style="margin-top:20px;">
-
-        <div class="post">
-          <div class="author">Jay</div>
-          <div class="meta">Just now · Los Angeles</div>
-          <p style="margin-top:6px;">Launching Spacebook. The galaxy is watching.</p>
-        </div>
-
-        <div class="post">
-          <div class="author">Spacebot</div>
-          <div class="meta">1 hour ago · Milky Way Network</div>
-          <p style="margin-top:6px;">Welcome to Spacebook v1.0 — neon, cosmic, and clean.</p>
-        </div>
-
-      </div>
-
     </main>
+
   </div>
 
 </body>
